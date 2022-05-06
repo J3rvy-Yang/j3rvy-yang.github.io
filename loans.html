@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="over.css">
+    <link rel="stylesheet" href="lessons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div> <button class="button3" id="button3"></button><br><br>
+        <nav>
+            <ul class="menu">
+                <a href="AAMain.html">
+                    <li data-text="Home">Home</li>
+                </a>
+                <a href="AFinance.html">
+                    <li data-text="lessons">lessons</li>
+                </a>
+                <a href="Test.html">
+                    <li data-text="Test">Test</li>
+                </a>
+                <a href="Contact.html">
+                    <li data-text="Contact">Contact</li>
+                </a>
+                <a href="src.html">
+                    <li data-text="Sources">Sources</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div class="Head1">
+        <h1 id='title'>Loans</h1>
+    </div>
+    <div id="title1">What is a loan?</div>
+    <h1 id='title2'><br>
+        <button id='prevtop' class='button1' onclick='set_text(this.id);'>Prev</button>
+        <button id='nexttop' class='button2' onclick='set_text(this.id);'>Next</button><br>
+    </h1>
+    <div id="div1" div class="divs"> <img src="IMG/Loan1.png"></div>
+    <div id="div2" div class="divs"> <br><br><br><br><br><br> A loan is a type of credit in which an amount is lent to another party in exchange for future value or repayment of principal. A Principal in this case; is the set amount of money that you have borrowed and planed to pay back In many cases, lender will add interest and / or funding costs to the principal. This requires the borrower to repay in addition to the principal balance. Loans can be granted for a specific one-time amount or used as a permanent line of credit up to a specific limit amount of time. Loans come in many forms, including secured, unsecured, commercial loans, and personal loans.</div>
+    </div><br>
+    </div>
+    </div>
+</body>
+<script src="loans.js"></script>
+<script>
+    $('#button3').on('click', function() {
+        $('body').toggleClass('open');
+    });
+</script>
+
+</html>

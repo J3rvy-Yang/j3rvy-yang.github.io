@@ -1,0 +1,222 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="over.css">
+ </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <style>
+     body {
+         background-image: url('https://static.vecteezy.com/system/resources/previews/002/578/542/non_2x/technology-background-with-white-and-gold-geometric-element-abstract-modern-elegant-geometric-design-with-golden-line-vector.jpg');
+     }
+
+     img {
+         padding-top: 50px;
+         padding-right: 30px;
+         padding-bottom: 50px;
+         padding-left: 80px;
+     }
+
+     .Heading h2 {
+         text-align: center;
+         font-size: 30px;
+         font-weight: 300;
+         color: #222;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+
+     .Heading h2:after,
+     .Heading h2:before {
+         content: " ";
+         display: block;
+         border-bottom: 1px solid #c50000;
+         border-top: 1px solid #c50000;
+         height: 5px;
+         background-color: #f8f8f8;
+     }
+
+     .Head1 h1 {
+         text-align: center;
+         font-size: 30px;
+         font-weight: 300;
+         color: #222;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+
+     .Head1 h1:after,
+     .Head1 h1:before {
+         content: " ";
+         display: block;
+         border-bottom: 1px solid #d4af37;
+         border-top: 1px solid #d4af37;
+         height: 5px;
+         background-color: transparent;
+     }
+
+     #div1 {
+         text-align: center;
+         width: 50%;
+         float: Right;
+         height: 500px;
+         font-family: 'Bakbak one', cursive;
+         font-size: 1EM;
+         background-color: transparent;
+         color: #222;
+         vertical-align: middle
+     }
+
+     #div2 {
+         text-align: center;
+         width: 50%;
+         float: Right;
+         height: 500px;
+         font-family: 'Bakbak one', cursive;
+         font-size: 1EM;
+         background-color: transparent;
+         color: #222;
+     }
+
+     #title1 {
+         text-align: center;
+         font-family: 'Bakbak one', 'cursive';
+         font-size: 1EM;
+         color: #222;
+         text-transform: uppercase;
+     }
+
+     #title2 {
+         text-align: center;
+         font-family: 'Bakbak one', 'cursive';
+         font-size: 1EM;
+         color: #222;
+         text-transform: uppercase;
+     }
+
+     .button2 {
+         color: #222;
+         text-align: center;
+         font-size: 12px;
+         width: 100px;
+         transition: all 0.5s;
+         cursor: pointer;
+         background-color: transparent;
+         border-radius: 40px;
+         background: #fff;
+         border: 2px solid #d4af37;
+         text-transform: uppercase;
+     }
+
+     .button2 {
+         cursor: pointer;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button2:after {
+         content: '»';
+         position: absolute;
+         opacity: 0;
+         right: -20px;
+         transition: 0.5s;
+     }
+
+     .button2:hover {
+         padding-right: 12px;
+         padding-left: 4px;
+         background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+     }
+
+     .button2:hover:after {
+         opacity: 1;
+         right: 10px;
+     }
+
+     .button1 {
+         color: #222;
+         text-align: center;
+         font-size: 12px;
+         width: 100px;
+         transition: all 0.5s;
+         cursor: pointer;
+         background-color: transparent;
+         border-radius: 40px;
+         background: #fff;
+         border: 2px solid #d4af37;
+         text-transform: uppercase;
+     }
+
+     .button1 {
+         cursor: pointer;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button1:after {
+         content: '«';
+         position: absolute;
+         opacity: 0;
+         left: -20px;
+         transition: 0.5s;
+     }
+
+     .button1:hover {
+         padding-right: 4px;
+         padding-left: 12px;
+         background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+     }
+
+     .button1:hover:after {
+         opacity: 1;
+         left: 10px;
+     }
+ </style>
+
+ <body>
+     <div> <button class="button3" id="button3"></button><br><br>
+         <nav>
+             <ul class="menu">
+                 <a href="AAMain.html">
+                     <li data-text="Home">Home</li>
+                 </a>
+                 <a href="AFinance.html">
+                     <li data-text="lessons">lessons</li>
+                 </a>
+                 <a href="Test.html">
+                     <li data-text="Test">Test</li>
+                 </a>
+                 <a href="Contact.html">
+                     <li data-text="Contact">Contact</li>
+                 </a>
+                 <a href="src.html">
+                     <li data-text="Sources">Sources</li>
+                 </a>
+             </ul>
+         </nav>
+     </div>
+     <div class="Head1">
+         <h1 id='title'>Rental Properties</h1>
+     </div>
+     <div id="title1">Overveiw</div>
+     <h1 id='title2'><br>
+         <button id='prevtop' class='button1' onclick='set_text(this.id);'>Prev</button>
+         <button id='nexttop' class='button2' onclick='set_text(this.id);'>Next</button><br>
+     </h1>
+     <div id="div1" div class="divs"> <img src="IMG/Buy1.png"></div>
+     <div id="div2" div class="divs"> <br><br><br>Residential rental property is defined as a property bought by an investor and occupied by tenants under a lease or other sort of rental arrangement. Residential property is land zoned expressly for individual or household living or habitation; it can range from single-family homes to big multi-unit apartment buildings. In contrast to residential rental property, commercial rental property is leased out to businesses in properties zoned specifically for profit generating. <br><br> Single-family homes, condominium units, apartments, townhouses, duplexes, and other types of residential real estate are available. The phrase "residential rental property" distinguishes this type of rental real estate investment from commercial buildings, where the renter is typically a corporation rather than a person or family, and hotels and motels, where the tenant is not a long-time occupant. Residential rental property is a viable investment option. Many people have firsthand experience with both the rental market as renters and the residential real estate market as homeowners, unlike stocks, futures, and other financial instruments. Residential rental properties are less daunting than other investments because of this familiarity with the process and the investment. <br><br> Residential rental property ownership might provide tax benefits that other, more indirect real estate investments, such as a real estate investment trust (REIT). Of course, direct ownership of residential rental property entails the obligation of acting as a landlord or hiring a property management business, as well as the risks that come with it, such as unoccupied units and tenant conflicts. </div>
+     </div><br>
+     </div>
+     </div>
+ </body>
+ <script src="buyrent.js"></script>
+ <script>
+     $('#button3').on('click', function() {
+         $('body').toggleClass('open');
+     });
+ </script>
+
+ </html>

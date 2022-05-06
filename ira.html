@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="over.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/002/578/542/non_2x/technology-background-with-white-and-gold-geometric-element-abstract-modern-elegant-geometric-design-with-golden-line-vector.jpg');
+        background-size: fill;
+    }
+
+    img {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+    }
+
+    .Heading h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        color: #222;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .Heading h2:after,
+    .Heading h2:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+        background-color: #f8f8f8;
+    }
+
+    .Head1 h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        color: #222;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .Head1 h1:after,
+    .Head1 h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #d4af37;
+        border-top: 1px solid #d4af37;
+        height: 5px;
+        background-color: transparent;
+    }
+
+    #div1 {
+        text-align: center;
+        width: 50%;
+        float: Right;
+        height: 500px;
+        font-family: 'Bakbak one', cursive;
+        font-size: 1EM;
+        background-color: transparent;
+        color: #222;
+    }
+
+    #div2 {
+        text-align: center;
+        width: 50%;
+        float: Right;
+        height: 500px;
+        font-family: 'Bakbak one', cursive;
+        font-size: 1EM;
+        background-color: transparent;
+        color: #222;
+    }
+
+    #title1 {
+        text-align: center;
+        font-family: 'Bakbak one', 'cursive';
+        font-size: 1EM;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    #title2 {
+        text-align: center;
+        font-family: 'Bakbak one', 'cursive';
+        font-size: 1EM;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    .button2 {
+        color: #222;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid #d4af37;
+        text-transform: uppercase;
+    }
+
+    .button2 {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button2:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button2:hover {
+        padding-right: 12px;
+        padding-left: 4px;
+        background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+    }
+
+    .button2:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+
+    .button1 {
+        color: #222;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid #d4af37;
+        text-transform: uppercase;
+    }
+
+    .button1 {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button1:after {
+        content: '«';
+        position: absolute;
+        opacity: 0;
+        left: -20px;
+        transition: 0.5s;
+    }
+
+    .button1:hover {
+        padding-right: 4px;
+        padding-left: 12px;
+        background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+    }
+
+    .button1:hover:after {
+        opacity: 1;
+        left: 10px;
+    }
+</style>
+
+<body>
+    <div> <button class="button3" id="button3"></button><br><br>
+        <nav>
+            <ul class="menu">
+                <a href="AAMain.html">
+                    <li data-text="Home">Home</li>
+                </a>
+                <a href="AFinance.html">
+                    <li data-text="lessons">lessons</li>
+                </a>
+                <a href="Test.html">
+                    <li data-text="Test">Test</li>
+                </a>
+                <a href="Contact.html">
+                    <li data-text="Contact">Contact</li>
+                </a>
+                <a href="src.html">
+                    <li data-text="Sources">Sources</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div class="Head1">
+        <h1 id='title'>Roth IRA + 401k</h1>
+    </div>
+    <div id="title1">Roth IRA</div>
+    <h1 id='title2'><br>
+        <button id='prevtop' class='button1' onclick='set_text(this.id);'>Prev</button>
+        <button id='nexttop' class='button2' onclick='set_text(this.id);'>Next</button><br>
+    </h1>
+    <div id="div1" div class="divs"> <img src="IMG/IRA1.png"></div>
+    <div id="div2" div class="divs"> <br><br><br><br>A Roth IRA is an Individual Retirement Account to which you contribute after-tax dollars. While there are no current-year tax benefits, your contributions and earnings can grow tax-free, and you can withdraw them tax- and penalty-free after age 59.5 and once the account has been open for five years. As with any eligible retirement account, money invested in a Roth IRA is tax exempt. However, Roth IRAs are less restrictive than other accounts. Account holders can maintain Roth IRA indefinitely. There is no minimum lifetime allocation (RMD) required for a lifetime like a 401 (k) or a traditional IRA. <br><br>Once the account is funded, there are various investment options within RothIRA, including mutual funds, stocks, bonds, exchange traded funds (ETFs), deposit certificates (CDs), money market funds, and even cryptocurrencies. The IRS states that cryptocurrencies cannot be deposited directly into the Roth IRA. However, with the recent advent of "Bitcoin IRA", a retirement account has been created that allows you to invest in cryptocurrencies. The IRS also lists other assets that are not allowed within the IRA such as Life insurance contracts and derivative trades. <br><br>If you want a wide range of investment options, you need to open a Roth Self-Directed IRA (SDIRA). This is a special category of RothIRA where investors, not financial institutions, manage their investments. These open up the world of possible investment. In addition to standard investments (stocks, bonds, cash, money market funds, mutual funds), you can hold assets that are not normally part of your retirement portfolio. Some of these include gold, investment real estate, partnerships, tax liens and even franchise businesses.</div>
+    </div><br>
+    </div>
+    </div>
+</body>
+<script src="ira.js"></script>
+<script>
+    $('#button3').on('click', function() {
+        $('body').toggleClass('open');
+    });
+</script>
+
+</html>

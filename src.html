@@ -1,0 +1,226 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="over.css">
+ </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <style>
+     body {
+         background-image: url('https://static.vecteezy.com/system/resources/previews/002/578/542/non_2x/technology-background-with-white-and-gold-geometric-element-abstract-modern-elegant-geometric-design-with-golden-line-vector.jpg');
+     }
+
+     img {
+         padding-top: 50px;
+         padding-right: 30px;
+         padding-bottom: 50px;
+         padding-left: 80px;
+     }
+
+     .Heading h2 {
+         text-align: center;
+         font-size: 30px;
+         font-weight: 300;
+         color: #222;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+
+     .Heading h2:after,
+     .Heading h2:before {
+         content: " ";
+         display: block;
+         border-bottom: 1px solid #c50000;
+         border-top: 1px solid #c50000;
+         height: 5px;
+         background-color: #f8f8f8;
+     }
+
+     .Head1 h1 {
+         text-align: center;
+         font-size: 30px;
+         font-weight: 300;
+         color: #222;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+
+     .Head1 h1:after,
+     .Head1 h1:before {
+         content: " ";
+         display: block;
+         border-bottom: 1px solid #d4af37;
+         border-top: 1px solid #d4af37;
+         height: 5px;
+         background-color: transparent;
+     }
+
+     #div1 {
+         text-align: center;
+         width: 50%;
+         float: Right;
+         height: 500px;
+         font-family: 'Bakbak one', cursive;
+         font-size: 1EM;
+         background-color: transparent;
+         color: #222;
+         vertical-align: middle
+     }
+
+     #div2 {
+         text-align: center;
+         width: 50%;
+         float: Right;
+         height: 500px;
+         font-family: 'Bakbak one', cursive;
+         font-size: 1EM;
+         background-color: transparent;
+         color: #222;
+     }
+
+     #title1 {
+         text-align: center;
+         font-family: 'Bakbak one', 'cursive';
+         font-size: 1EM;
+         color: #222;
+         text-transform: uppercase;
+     }
+
+     #title2 {
+         text-align: center;
+         font-family: 'Bakbak one', 'cursive';
+         font-size: 1EM;
+         color: #222;
+         text-transform: uppercase;
+     }
+
+     .button2 {
+         color: #222;
+         text-align: center;
+         font-size: 12px;
+         width: 100px;
+         transition: all 0.5s;
+         cursor: pointer;
+         background-color: transparent;
+         border-radius: 40px;
+         background: #fff;
+         border: 2px solid #d4af37;
+         text-transform: uppercase;
+     }
+
+     .button2 {
+         cursor: pointer;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button2:after {
+         content: '»';
+         position: absolute;
+         opacity: 0;
+         right: -20px;
+         transition: 0.5s;
+     }
+
+     .button2:hover {
+         padding-right: 12px;
+         padding-left: 4px;
+         background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+     }
+
+     .button2:hover:after {
+         opacity: 1;
+         right: 10px;
+     }
+
+     .button1 {
+         color: #222;
+         text-align: center;
+         font-size: 12px;
+         width: 100px;
+         transition: all 0.5s;
+         cursor: pointer;
+         background-color: transparent;
+         border-radius: 40px;
+         background: #fff;
+         border: 2px solid #d4af37;
+         text-transform: uppercase;
+     }
+
+     .button1 {
+         cursor: pointer;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button1:after {
+         content: '«';
+         position: absolute;
+         opacity: 0;
+         left: -20px;
+         transition: 0.5s;
+     }
+
+     .button1:hover {
+         padding-right: 4px;
+         padding-left: 12px;
+         background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+     }
+
+     .button1:hover:after {
+         opacity: 1;
+         left: 10px;
+     }
+ </style>
+
+ <body>
+     <div> <button class="button3" id="button3"></button><br><br>
+         <nav>
+             <ul class="menu">
+                 <a href="AAMain.html">
+                     <li data-text="Home">Home</li>
+                 </a>
+                 <a href="AFinance.html">
+                     <li data-text="lessons">lessons</li>
+                 </a>
+                 <a href="Test.html">
+                     <li data-text="Test">Test</li>
+                 </a>
+                 <a href="Contact.html">
+                     <li data-text="Contact">Contact</li>
+                 </a>
+                 <a href="src.html">
+                     <li data-text="Sources">Sources</li>
+                 </a>
+             </ul>
+         </nav>
+     </div>
+     <div class="Head1">
+         <h1 id='title'>Sources</h1>
+     </div>
+     <h1 id='title2'><br>
+         <button id='prevtop' class='button1' onclick='set_text(this.id);'>Prev</button>
+         <button id='nexttop' class='button2' onclick='set_text(this.id);'>Next</button><br>
+     </h1>
+     <div id="title1">Here is a list of sources I used to gather information</div>
+     <h1 id='title2'><br>
+     </h1>
+     <div id="div1" div class="divs"><b>CSS and HTML Refrences</b><br><br><br><br><br><br><br> https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_card<br> https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear<br> https://codepen.io/KnYem/pen/JdjWxG<br> https://codepen.io/derekmorash/pen/XddZJY<br> https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h<br> https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_lib_google<br> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay<br>https://codepen.io/Helina/pen/oGjWNe<br> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay<br> https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow<br> https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_center<br> https://codepen.io/mksglu/pen/jxXGaY </div>
+     <div id="div2" div class="divs"><b>Information Refrences</b><br> https://www.investopedia.com/terms/b/bank.asp<br> https://www.imf.org/external/pubs/ft/fandd/2012/03/basics.htm<br> https://www.nerdwallet.com/article/banking/what-is-a-bank<br> https://www.investopedia.com/terms/l/loan.asp<br> https://www.nerdwallet.com/article/loans/personal-loans/what-is-a-loan<br> https://corporatefinanceinstitute.com/resources/knowledge/finance/loan/<br> https://www.investopedia.com/terms/c/creditcard.asp<br> https://www.experian.com/blogs/ask-experian/what-is-a-credit-card/<br> https://www.cnbc.com/select/what-is-a-credit-card/<br> https://www.thebalance.com/what-is-a-debit-card-2385853<br> https://www.fool.com/the-ascent/banks/checking-accounts/what-is-debit-card/<br> ramseysolutions.com/banking/the-basics-of-your-debit-card<br> https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks<br> https://www.nerdwallet.com/article/investing/what-are-stocks-how-they-work<br> https://corporatefinanceinstitute.com/resources/knowledge/finance/what-is-a-stock/<br> https://www.investopedia.com/terms/c/cryptocurrency.asp<br> https://www.nerdwallet.com/article/investing/cryptocurrency<br> https://www.coinbase.com/learn/crypto-basics/what-is-cryptocurrency<br> https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq<br> https://www.forbes.com/advisor/investing/cryptocurrency/nft-non-fungible-token/<br> https://www.simplilearn.com/tutorials/blockchain-tutorial/what-is-nft<br>
+         <br>
+     </div>
+     </div><br>
+     </div>
+     </div>
+ </body>
+ <script src="src.js"></script>
+ <script>
+     $('#button3').on('click', function() {
+         $('body').toggleClass('open');
+     });
+ </script>
+
+ </html>

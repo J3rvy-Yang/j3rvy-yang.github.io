@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="over.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/002/578/542/non_2x/technology-background-with-white-and-gold-geometric-element-abstract-modern-elegant-geometric-design-with-golden-line-vector.jpg');
+    }
+
+    img {
+        padding-top: 200px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        width: 90%;
+    }
+
+    .Heading h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        color: #222;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .Heading h2:after,
+    .Heading h2:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #c50000;
+        border-top: 1px solid #c50000;
+        height: 5px;
+        background-color: #f8f8f8;
+    }
+
+    .Head1 h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        color: #222;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .Head1 h1:after,
+    .Head1 h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #d4af37;
+        border-top: 1px solid #d4af37;
+        height: 5px;
+        background-color: transparent;
+    }
+
+    #div1 {
+        text-align: center;
+        width: 50%;
+        float: Right;
+        height: 500px;
+        font-family: 'Bakbak one', cursive;
+        font-size: 1EM;
+        background-color: transparent;
+        color: #222;
+        vertical-align: middle
+    }
+
+    #div2 {
+        text-align: center;
+        width: 50%;
+        float: Right;
+        height: 500px;
+        font-family: 'Bakbak one', cursive;
+        font-size: 1EM;
+        background-color: transparent;
+        color: #222;
+    }
+
+    #title1 {
+        text-align: center;
+        font-family: 'Bakbak one', 'cursive';
+        font-size: 1EM;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    #title2 {
+        text-align: center;
+        font-family: 'Bakbak one', 'cursive';
+        font-size: 1EM;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    .button2 {
+        color: #222;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid #d4af37;
+        text-transform: uppercase;
+    }
+
+    .button2 {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button2:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button2:hover {
+        padding-right: 12px;
+        padding-left: 4px;
+        background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+    }
+
+    .button2:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+
+    .button1 {
+        color: #222;
+        text-align: center;
+        font-size: 12px;
+        width: 100px;
+        transition: all 0.5s;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid #d4af37;
+        text-transform: uppercase;
+    }
+
+    .button1 {
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button1:after {
+        content: '«';
+        position: absolute;
+        opacity: 0;
+        left: -20px;
+        transition: 0.5s;
+    }
+
+    .button1:hover {
+        padding-right: 4px;
+        padding-left: 12px;
+        background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+    }
+
+    .button1:hover:after {
+        opacity: 1;
+        left: 10px;
+    }
+</style>
+
+<body>
+    <div> <button class="button3" id="button3"></button><br><br>
+        <nav>
+            <ul class="menu">
+                <a href="AAMain.html">
+                    <li data-text="Home">Home</li>
+                </a>
+                <a href="AFinance.html">
+                    <li data-text="lessons">lessons</li>
+                </a>
+                <a href="Test.html">
+                    <li data-text="Test">Test</li>
+                </a>
+                <a href="Contact.html">
+                    <li data-text="Contact">Contact</li>
+                </a>
+                <a href="src.html">
+                    <li data-text="Sources">Sources</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div class="Head1">
+        <h1 id='title'>New Cars</h1>
+    </div>
+    <div id="title1">Why Brand new and luxury Cars are a bad investment</div>
+    <h1 id='title2'><br>
+    </h1>
+    <div id="div1" div class="divs"> <img src="IMG/Car.png"></div>
+    <div id="div2" div class="divs"> When it comes to cars, buying a new one is not the way to go. With rising new car prices and slowing wage growth, buying a new car is no longer a viable option. Why spend hundreds of dollars on something that quickly loses its value and appeal? Overall, after a few months, the joy of a new car is gone and your car becomes another used car. Payment is the only thing that won't go away! On the other hand, if you wait a few years, you can buy the same product for much less money. There is no reason why you should lose a lot of money by buying a car. It's a lifestyle choice. It's not something that could potentially stop your lifestyle, so you can enjoy life the way you want. Cars should not interfere with financial success. Rather, it should be a means of transportation to get there.<br><br>Not only are you deprived of more money, more interest, and longer loans, but you are also paying more for car insurance. Insurance premiums are often higher because new cars are more valuable than used cars. If you buy a new car, you should also choose a gap cover so that you don't incur a lot of debt if it's fully depreciated (the gap cover pays the difference between the value of the car and the unpaid amount;Loans), increase your insurance premiums. Many factors affect how much you spend on insurance, but it's important to consider your monthly costs.<br><br>You will probably never hear the words Depreciation coming out of the car saleman's mouth. Depreciation is the decrease in the value of assets over its useful life span. The truth is that a new automobile loses 22% of its value in the first year. At the whole 5 year period? On average, you`ll lose 55% of your money's worth. So, on a good day, a $ 25,000 car that spends $ 27,000 plus taxes and duties is about $ 11,500.<br><br> Lastly,If your're taking out a loan to buy the car/when you agree to loan conditions with a vehicle dealer or bank, you’re paying them for the right of driving the car until the loan is clear. You don't actually rightfully own the car, meaning if you can no longer pay the monthly fees, the car can be taken away from you</div>
+    </div><br>
+    </div>
+    </div>
+</body>
+<script>
+    $('#button3').on('click', function() {
+        $('body').toggleClass('open');
+    });
+</script>
+
+</html>
