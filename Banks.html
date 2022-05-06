@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="over.css">
+     <link rel="stylesheet" href="lessons.css">
+ </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+ <body>
+     <div class="overdiv"> <button class="button3" id="button3"></button><br><br>
+         <nav>
+             <ul class="menu">
+                 <a href="AAMain.html">
+                     <li data-text="Home">Home</li>
+                 </a>
+                 <a href="AFinance.html">
+                     <li data-text="lessons">lessons</li>
+                 </a>
+                 <a href="Test.html">
+                     <li data-text="Test">Test</li>
+                 </a>
+                 <a href="Contact.html">
+                     <li data-text="Contact">Contact</li>
+                 </a>
+                 <a href="src.html">
+                     <li data-text="Sources">Sources</li>
+                 </a>
+             </ul>
+         </nav>
+     </div>
+     
+     <div class="Head1">
+         <h1 id='title'>Banks</h1>
+     </div>
+     <div id="title1">What is a bank?</div>
+     <h1 id='title2'><br>
+         <button id='prevtop' class='button1' onclick='set_text(this.id);'>Prev</button>
+         <button id='nexttop' class='button2' onclick='set_text(this.id);'>Next</button><br>
+     </h1>
+     <div id="div1" div class="divs"> <img src="IMG/Bank1.png"></div>
+     <div id="div2" div class="divs"> <br><br><br><br><br><br>Banks are financial institutions that are licensed to receive deposits and make loans. Banks are a very important part of the economy because they provide vital services for both consumers and businesses. Banks provide many finaicl services to the consumer such as; wealth management, currency exchange, and safe deposit boxes. There are many types of banks such as retail banks, commercial or corporate banks, and investment banks. In most countries, banks are either regulated by a central bank, or the countries goverment. Banks also provide credit opportunities for people and corporations. These types of credit can be used for short term cash or long term debt. </div>
+     </div><br>
+     </div>
+     </div>
+    
+ </body>
+ <script src="Banks.js"></script>
+ <script>
+     $('#button3').on('click', function() {
+         $('body').toggleClass('open');
+     });
+ </script>
+
+ </html>

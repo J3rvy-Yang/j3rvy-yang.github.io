@@ -1,0 +1,222 @@
+
+       body {
+           background-image: url('https://static.vecteezy.com/system/resources/previews/002/578/542/non_2x/technology-background-with-white-and-gold-geometric-element-abstract-modern-elegant-geometric-design-with-golden-line-vector.jpg');
+       }
+
+       .titleblock h1 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 300;
+           color: #222;
+           letter-spacing: 1px;
+           text-transform: uppercase;
+           display: grid;
+           grid-template-columns: 1fr max-content 1fr;
+           grid-template-rows: 27px 0;
+           grid-gap: 20px;
+           align-items: center;
+       }
+
+       .titleblock h1:after,
+       .titleblock h1:before {
+           content: " ";
+           display: block;
+           border-bottom: 1px solid #d4af37;
+           border-top: 1px solid #d4af37;
+           height: 5px;
+           background-color: transparent;
+       }
+
+       .Heading h2 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 300;
+           color: #222;
+           letter-spacing: 1px;
+           text-transform: uppercase;
+       }
+
+       .Heading h2:after,
+       .Heading h2:before {
+           content: " ";
+           display: block;
+           border-bottom: 1px solid #c50000;
+           border-top: 1px solid #c50000;
+           height: 5px;
+           background-color: #f8f8f8;
+       }
+
+       .divs1 {
+           text-align: center;
+           width: 50%;
+           float: Right;
+           height: 300px;
+           font-family: 'Bakbak one', cursive;
+           font-size: 1EM;
+           color: #222;
+           text-transform: uppercase;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+       }
+
+       .divs2 {
+           text-align: center;
+           width: 50%;
+           float: left;
+           height: 300px;
+           font-family: 'Bakbak one';
+           font-size: 1.1EM;
+           color: #222;
+           font-style: bold;
+       }
+       }
+
+       .contactblock h1 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 300;
+           color: #222;
+           letter-spacing: 1px;
+           text-transform: uppercase;
+           color: white;
+       }
+
+       .contactblock h1:after,
+       .contactblock h1:before {
+           content: " ";
+           display: block;
+           border-bottom: 1px solid transparent;
+           border-top: 1px solid transparent;
+           height: 5px;
+           background-color: White;
+       }
+
+       .bg {
+           background-color: transparent;
+           overflow: hidden;
+           background-position: left, right;
+           background-repeat: no-repeat, no-repeat;
+           background-size: contain, contain;
+       }
+
+       .Head2 h1 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 300;
+           color: #222;
+           letter-spacing: 1px;
+           text-transform: uppercase;
+       }
+
+       .Head2 h1:after,
+       .Head2 h1:before {
+           content: " ";
+           display: block;
+           border-bottom: 1px solid #d4af37;
+           border-top: 1px solid #d4af37;
+           height: 5px;
+           background-color: transparent;
+       }
+
+       .Head1 h1 {
+           text-align: center;
+           font-size: 30px;
+           font-weight: 300;
+           color: #222;
+           letter-spacing: 1px;
+           text-transform: uppercase;
+       }
+
+       .Head1 h1:after,
+       .Head1 h1:before {
+           content: " ";
+           display: block;
+           border-bottom: 1px solid #d4af37;
+           border-top: 1px solid #d4af37;
+           height: 5px;
+           background-color: transparent;
+       }
+
+       div.gallery {
+           border: 1px solid #d4af37;
+           background-color: white;
+           color: #d4af37;
+           text-transform: uppercase;
+           border-color: #d4af37;
+       }
+
+       div.gallery:hover {
+           border: 1px solid #777;
+           transform: translateX(-0.6em);
+           transition-duration: .4s;
+           border: 1px solid;
+           padding: 10px;
+           box-shadow: 5px 10px 18px #d4af37;
+       }
+
+       div.gallery img {
+           
+       }
+
+       div.desc {
+           padding: 15px;
+           text-align: center;
+       }
+
+       * {
+           box-sizing: border-box;
+       }
+
+       .responsive {
+           padding: 0 6px;
+           float: left;
+           width: 24.99999%;
+       }
+
+       @media only screen and (max-width: 700px) {
+           .responsive {
+               width: 49.99999%;
+               margin: 6px 0;
+           }
+       }
+
+       @media only screen and (max-width: 500px) {
+           .responsive {
+               height: 250px;
+               width: 100%;
+           }
+       }
+
+       .clearfix:after {
+           content: "";
+           display: table;
+           clear: both;
+       }
+
+       #placehold {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 33vw;
+       }
+
+       .gallery {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 24vw;
+           height: auto;
+       }
+
+       a {
+           width: 24vw;
+           height: auto;
+       }
+       .menu {
+           width: 100%;
+           height: 350px;
+       }
+ #google_translate_element{
+    
+ }

@@ -1,0 +1,168 @@
+
+     body {
+         background-image: url('https://static.vecteezy.com/system/resources/previews/002/578/542/non_2x/technology-background-with-white-and-gold-geometric-element-abstract-modern-elegant-geometric-design-with-golden-line-vector.jpg');
+     }
+
+     img {
+         padding-top: 50px;
+         padding-right: 30px;
+         padding-bottom: 50px;
+         padding-left: 80px;
+     }
+
+     .Heading h2 {
+         text-align: center;
+         font-size: 30px;
+         font-weight: 300;
+         color: #222;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+
+     .Heading h2:after,
+     .Heading h2:before {
+         content: " ";
+         display: block;
+         border-bottom: 1px solid #c50000;
+         border-top: 1px solid #c50000;
+         height: 5px;
+         background-color: #f8f8f8;
+     }
+
+     .Head1 h1 {
+         text-align: center;
+         font-size: 30px;
+         font-weight: 300;
+         color: #222;
+         letter-spacing: 1px;
+         text-transform: uppercase;
+     }
+
+     .Head1 h1:after,
+     .Head1 h1:before {
+         content: " ";
+         display: block;
+         border-bottom: 1px solid #d4af37;
+         border-top: 1px solid #d4af37;
+         height: 5px;
+         background-color: transparent;
+     }
+
+     #div1 {
+         text-align: center;
+         width: 50%;
+         float: Right;
+         height: 500px;
+         font-family: 'Bakbak one', cursive;
+         font-size: 1EM;
+         background-color: transparent;
+         color: #222;
+         vertical-align: middle
+     }
+
+     #div2 {
+         text-align: center;
+         width: 50%;
+         float: Right;
+         height: 500px;
+         font-family: 'Bakbak one', cursive;
+         font-size: 1EM;
+         background-color: transparent;
+         color: #222;
+     }
+
+     #title1 {
+         text-align: center;
+         font-family: 'Bakbak one', 'cursive';
+         font-size: 1EM;
+         color: #222;
+         text-transform: uppercase;
+     }
+
+     #title2 {
+         text-align: center;
+         font-family: 'Bakbak one', 'cursive';
+         font-size: 1EM;
+         color: #222;
+         text-transform: uppercase;
+     }
+
+     .button2 {
+         color: #222;
+         text-align: center;
+         font-size: 12px;
+         width: 100px;
+         transition: all 0.5s;
+         cursor: pointer;
+         background-color: transparent;
+         border-radius: 40px;
+         background: #fff;
+         border: 2px solid #d4af37;
+         text-transform: uppercase;
+     }
+
+     .button2 {
+         cursor: pointer;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button2:after {
+         content: '»';
+         position: absolute;
+         opacity: 0;
+         right: -20px;
+         transition: 0.5s;
+     }
+
+     .button2:hover {
+         padding-right: 12px;
+         padding-left: 4px;
+         background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+     }
+
+     .button2:hover:after {
+         opacity: 1;
+         right: 10px;
+     }
+
+     .button1 {
+         color: #222;
+         text-align: center;
+         font-size: 12px;
+         width: 100px;
+         transition: all 0.5s;
+         cursor: pointer;
+         background-color: transparent;
+         border-radius: 40px;
+         background: #fff;
+         border: 2px solid #d4af37;
+         text-transform: uppercase;
+     }
+
+     .button1 {
+         cursor: pointer;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button1:after {
+         content: '«';
+         position: absolute;
+         opacity: 0;
+         left: -20px;
+         transition: 0.5s;
+     }
+
+     .button1:hover {
+         padding-right: 4px;
+         padding-left: 12px;
+         background-image: linear-gradient(to right top, #d4af37, #cfbe62, #cecb8a, #d2d6b1, #dcdfd5);
+     }
+
+     .button1:hover:after {
+         opacity: 1;
+         left: 10px;
+     }
+
+  
