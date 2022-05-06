@@ -1,7 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="AAMain.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="AAMain.css">
+</head>
+<style>
+    input[type=text],
+    select,
+    textarea {
+        width: 75%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    Button {
+        background-color: transparent;
+        border: 2px solid # #d4af37;
+        border-radius: 0.6em;
+        color: black;
+        cursor: pointer;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    button:hover,
+    button:focus {
+        color: #222;
+        outline: 0;
+    }
+
+    .fourth {
+        border-color: # #d4af37;
+        color: black;
+        background-image: linear-gradient(45deg, #d4af37 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        transition: background 300ms ease-in-out;
+    }
+
+    .fourth:hover {
+        background-position: 0;
+    }
+
+    textarea[type="text"]::placeholder {
+        text-align: center;
+    }
+</style>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <section class="cd-hero">
+        <ul class="cd-hero-slider">
+            <li class="selected" <li style="background:url(https://static.vecteezy.com/system/resources/previews/002/848/484/non_2x/modern-white-background-with-shiny-gold-geometric-element-abstract-light-clean-silver-background-elegant-geometric-design-with-golden-line-vector.jpg) no-repeat 50% 50%;background-size:cover">
+                <div class="cd-full-width">
+                    <h2>LUCRO™</h2>
+                    <img src="IMG/Logo1.png">
+                    <p>Financial Literacy Made Easy</p>
+                    <a href="AFinance.html"> <button class="fourth">Learn Now!</button></a>
+                </div>
+            </li>
+            <li class="cd-bg-video" <li style="background:url(https://static.vecteezy.com/system/resources/previews/003/195/828/large_2x/white-elegant-background-free-vector.jpg) no-repeat 50% 50%;background-size:cover) no-repeat 50% 50%;background-size:cover">
+                <div class="cd-full-width">
+                    <h2>Introduction</h2>
+                    <p>Welcome To reach the luxury of being finally free, one must have a solid foundation of financial literacy. Sadly, Personal Finance isn't being taught in many schools, and education institutions aren't doing young adults any favors by keeping them in the dark about personal financial matters. Financial literacy is important because it equips people with the knowledge and skills people need to manage money effectively. Without it, our financial decisions and the actions we take or don't take—lack a solid foundation for success. This is the go-to website for anyone who wishes to educate themselves towards sucess. Happy learning!</p>
+            </li>
+            <li style="background:url(https://static.vecteezy.com/system/resources/previews/002/848/489/original/abstract-geometric-line-background-with-white-and-gold-element-elegant-futuristic-design-with-golden-line-vector.jpg) no-repeat 50% 50%;background-size:cover">
+                <div class="cd-half-width">
+                    <h2>Jervy Yang</h2>
+                    <p>salutations everyone! My name is Jervy Yang and I’m 17 years old. I attend Academy at Palumbo and am currently a junior. I aspire to become a real estate wholesaler as well as start up companies in the near future. My hobbies include reading, watching anime and playing volleyball.</p>
+                    <img src="IMG/Jervy.png" class="Portait.1">
+            </li>
+            <li style="background:url(https://static.vecteezy.com/system/resources/previews/002/848/489/original/abstract-geometric-line-background-with-white-and-gold-element-elegant-futuristic-design-with-golden-line-vector.jpg) no-repeat 50% 50%;background-size:cover">
+                <div class="cd-half-width">
+                    <h2> Iman Bint Yahya</h2>
+                    <p>Hi! My name is Iman Bint Yahya and I’m 16 years old. I attend Academy at Palumbo and am currently a junior. I aspire to be an illustrator and comic maker. My hobbies include drawing and writing and I love animals and anime. </p>
+                    <img src="IMG/Iman.png" class="Portait.1">
+            </li>
+            <li style="background:url(https://static.vecteezy.com/system/resources/previews/002/578/548/original/modern-white-background-with-shiny-gold-geometric-element-elegant-geometric-design-with-golden-line-vector.jpg) no-repeat 50% 50%;background-size:cover">
+                <div class="cd-full-width1">
+                    <p><i class="fa fa-map-marker " style="font-size:24px"></i> Philadelphia, US</p>
+                    <p><i class="fa fa-phone " style="font-size:24px"></i> Phone: Avalible upon Request</p>
+                    <p><i class="fa fa-envelope " style="font-size:24px"> </i> Email: J.yang92604@gmail.com</p>
+                    <br>
+                    <p>Let's get in touch. Send me a message:</p>
+                    <p><input class="Contact_ME" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="Contact_ME" type="text" placeholder="Email" required name="Email"></p>
+                    <p><input class="Contact_ME" type="text" placeholder="Subject" required name="Subject"></p>
+                    <textarea id="subject" type="text" placeholder="Hello everyone, I hope you are all doing well. Unfortunaly, this current webhost does not support PHP. If you have any questions or would like to get in touch with me, please manually email me from your browser or by pressing the send button; it will direct you to an external source (Goolge Form).I appologize for any inconvience in advace." style="height:200px"></textarea>
+                    <p>
+                        <button class="fourth" type="submit">
+                            <a href="https://forms.gle/m8va7LLDT5wrTAMBA"><i class="fa fa-paper-plane"></i> SEND MESSAGE </button></a>
+                    </p>
+                </div>
+                </div> <!-- .cd-full-width -->
+            </li>
+        </ul> <!-- .cd-hero-slider -->
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                <ul>
+                    <li class="selected"><a href="#0"><i class="fa fa-home" style="font-size:24px"></i><br>Home</a></li>
+                    <li><a href="#0"><i class="fa fa-info-circle" style="font-size:24px"></i><br>About</a></li>
+                    <li><a href="#0"><i class="fa fa-code-fork" style="font-size:24px"></i><br>Coder</a></li>
+                    <li><a href="#0"><i class="fa fa-pencil" style="font-size:24px"></i><br>Artist</a></li>
+                    <li><a href="#0"><i class="fa fa-address-card" style="font-size:24px"></i><br>Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- .cd-slider-nav -->
+    </section> <!-- .cd-hero -->
 </body>
+
 </html>
